@@ -1,91 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV – TOUKAM Erika</title>
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="logo"><h1>Mon Curriculum Vitae</h1></div>
-        <ul class="menu">
-            <li><a href="#presentation"active>Accueil</a></li>
-            <li><a href="#me-concernant">A propos</a></li>
-            <li><a href="#skill">competences</a></li>
-            <li><a href="#styl">projet</a></li>
-            <li><a href="#offres">services</a></li>
-            <li><a href="#infos">contacts</a></li>
-        </ul>
-    </nav>
-    <center>
-    <section class="content">
-        <h1>mon profil</h1>
-        <div class="Accueil" id="presentation"></div>
-        <p><strong>ETUDIANTE EN INFORMATIQUE DE FORMATION GENIE LOGICIEL ET SYSTEME RESEAU</strong></p>
-        <div class="img" id="profil">
-            <img src="Snapchat-210427177.jpg">
-        </div>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+    <div class="logo">Mon CV</div>
+    <div class="menuHamburger" id="menu-toggle">
+      <span></span><span></span><span></span>
+    </div>
+    <ul class="menu" id="nav-menu">
+      <li><a href="#presentation">Accueil</a></li>
+      <li><a href="#me-concernant">À propos</a></li>
+      <li><a href="#skill">Compétences</a></li>
+      <li><a href="#projects">Projets</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ACCUEIL -->
+  <main>
+    <section class="presentation" id="presentation">
+      <img src="toto.jpg" alt="Photo de profil" class="profil-img">
+      <h1>TOUKAM Erika</h1>
+      <p>Étudiante en informatique – Génie logiciel et système réseau</p>
     </section>
-    <section>
-        <div class="Apropos" id="me-concernant">
-        <strong><p>je suis TOUKAM ERIKA etudiante en informatique passionnee par le developpement web et tout ce qui a trait avec le digital bien sur ayant obtenu mon diplome a l'instituit africain d'informatique au cameroun,institut formant les ingenieurs en informatique.</p>
-        <h2>Langues</h2>
-        <P>FRANCAIS (tres bien parle, ecrire et lire)</P>
-        <P>ANGLAIS (peu parler, ecrire et lire)</P> 
-        <p>ESPAGNOL (peu parler, ecrire et lire)</p> 
-        <P><em>j'ai la phobie des animaux, du bruit, des voyages successifs par contre j'aime travaille dans le calme et dans un environnement propre.
-            cependant je suis basee a bafousssam cameroun</em></P>
-            <P>je repond au:</P>
-            <P>phone: +237 698 705 179</P>
-            <P>E-mail: erikatoukam@gmail.com</P>
-            <p>city: bafousssam cameroun</p></strong>
-        </div>
+
+    <!-- LANGUES -->
+    <section id="langues">
+      <h2>Langues</h2>
+      <ul>
+        <li>Français – Très bien</li>
+        <li>Anglais – Niveau basique</li>
+        <li>Espagnol – Niveau basique</li>
+      </ul>
     </section>
-    <section>
-        <div class="competences" id="skill">
-        <h1>competences</h1>
-        <strong><P>DEVELOPPEMENT D'APPLICATION (web et mobile)</P>
-        <p>SECRETARIAT BUREAUTIQUE</p>
-        <P>MARKETING DIGITAL</P>
-        <P>COMPTABILITE INFORMATISEE</P>
-        <P>MAINTENACE INFORMATIQUE</P> 
-        <P>INFOGRAPHIE</P></strong>
-        </div>
+
+    <!-- COMPÉTENCES -->
+    <section id="skill">
+      <h2>Compétences</h2>
+      <div class="skills">
+        <div class="skill"><p>HTML</p><div class="bar" style="--progress: 80%">80%</div></div>
+        <div class="skill"><p>CSS</p><div class="bar" style="--progress: 75%">75%</div></div>
+        <div class="skill"><p>JavaScript</p><div class="bar" style="--progress: 50%">50%</div></div>
+        <div class="skill"><p>PHP</p><div class="bar" style="--progress: 60%">60%</div></div>
+        <div class="skill"><p>Design</p><div class="bar" style="--progress: 75%">75%</div></div>
+        <div class="skill"><p>PostgreSQL</p><div class="bar" style="--progress: 75%">75%</div></div>
+      </div>
     </section>
-    <section>
-        <div class="projet" id="styl"></div>
-        <strong><p> projet de gestion dune Ferme Avicole</p></strong>
-         <a href="file:///C:/Users/erika/Desktop/ciao/index.html"> <img src="Capture.PNG"></a>
-         <a href="file:///C:/Users/erika/Desktop/bonjour/combat.html"><img src="1.PNG"></a>
-         <a href="http://localhost/tk/accueil.php"><img src="2.PNG"></a>
-         <a href=" http://localhost/devoir/toto.html"><img src="3.PNG"></a>
-         <a href="http://localhost/tk/index.%20inscription.html"><img src="4.PNG"></a>
+
+    <!-- PROJETS -->
+    <section id="projects">
+      <h2>Projets</h2>
+      <div class="project-grid">
+        <div class="project"><a href="ciao/index.html"><img src="Capture.PNG" alt=""><p>Playlist Musicale</p></a></div>
+        <div class="project"><a href="bonjour/combat.html"><img src="1.PNG" alt=""><p>Vente d'équipements</p></a></div>
+        <div class="project"><a href="tk/accueil.php"><img src="2.PNG" alt=""><p>GED</p></a></div>
+        <div class="project"><a href="devoir/toto.html"><img src="3.PNG" alt=""><p>Formulaire</p></a></div>
+        <div class="project"><a href="tk/index.inscription.html"><img src="4.PNG" alt=""><p>Inscription en ligne</p></a></div>
+      </div>
     </section>
-    <section>
-        <div class="services" id="offres">
-        <h2>Nos services</h2>
-        <strong><P>developpement d'application</P>
-        <P>realisation des faire part, des banderoles, des flyers, cartes de voeux, d'invitation et anniverssaire</P>
-        <P>vente et achats de produits en ligne </P>
-        <P>offre de service diverse...</P></strong>
-        </div>
-        </section>
-        <section>
-            <div class="contacts" id="infos"></div>
-            <h1>INFORMATIONS</h1>
-           <strong><P><h2>Copyright &copy 2024. Tous droits reserves.</h2></P>
-            <p><h2>contacter-nous:erikatoukam@gmail.com</h2></p>
-            <P><h2>phone: +237 698 705 179</h2></P>
-            <div class="Menu"></strong>
-                <ul>
-                    <h3>
-                        <li><a href="#">A Propos</a></li>
-                        <li><a href="#">Aide</a></li>
-                    </h3>
-                </ul>
-            </div>
-        </section>
-    </center>
+
+    <!-- SERVICES -->
+    <section id="services">
+      <h2>Services</h2>
+      <ul>
+        <li>Développement d'application</li>
+        <li>Infographie</li>
+        <li>Marketing digital</li>
+        <li>Création de faire-part, banderoles, flyers, etc.</li>
+        <li>Vente/achat de produits en ligne</li>
+      </ul>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email : erikatoukam028@gmail.com</p>
+      <p>Téléphone : +237 698 705 179 / 686 293 443 / 670 900 120</p>
+      <p>Ville : Bafoussam, Cameroun</p>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2024 TOUKAM Erika. Tous droits réservés.</p>
+  </footer>
+
+  <script src="index.js"></script>
 </body>
 </html>
-    
+
