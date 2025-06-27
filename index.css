@@ -1,0 +1,229 @@
+/* RESET GLOBAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #80c9ee44;
+  color: #2c3e50;
+  line-height: 1.6;
+}
+
+/* IMAGES */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: #077bf0;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+}
+
+.menu li {
+  margin-left: 20px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: #e67e22;
+}
+
+/* MENU BURGER */
+.menuHamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+.menuHamburger span {
+  height: 3px;
+  width: 25px;
+  background-color: white;
+  margin: 4px 0;
+  border-radius: 2px;
+}
+
+/* SECTION */
+section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+section h2 {
+  margin-bottom: 20px;
+  color: #3498db;
+}
+
+/* PROFIL */
+.profil-img {
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+/* COMPÉTENCES */
+.skills {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.skill {
+  margin: 10px 0;
+  text-align: left;
+}
+
+.bar {
+  background-color: #ddd;
+  height: 20px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.bar::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: var(--progress);
+  background-color: #3498db;
+  border-radius: 10px;
+  transition: width 0.4s ease-in-out;
+}
+
+/* PROJETS */
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.project {
+  max-width: 240px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+.project:hover {
+  transform: translateY(-5px);
+}
+.project p {
+  padding: 10px;
+  background-color: #f0f0f0;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+/* LISTES */
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li {
+  padding: 5px 0;
+}
+
+/* FOOTER */
+footer {
+  background-color: #087ff5;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    background-color: #41688f;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .menu.show {
+    display: flex;
+  }
+
+  .menu li {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .menuHamburger {
+    display: flex;
+  }
+}
+.img:hover{
+   opacity: 0.5;
+   transition: opacity 0.3 ease;
+}
+.fade-in{
+  opacity: 0;
+  transform: translateX(150px);
+  transition: all 1s ease-in-out;
+}
+.fade-in.visible{
+  opacity: 1;
+  transform: translateX(0);
+}
+.fade-ine{
+  opacity: 0;
+  transform: translateX(-150px);
+  transition: all 1s ease-in-out;
+}
+.fade-ine.visiblee{
+  opacity: 1;
+  transform: translateX(0);
+}
+.animated-btn {
+  padding: 10px 20px;
+  background: #3498db;
+  color: white;
+  border: none;
+  transition: transform 0.3 ease;
+}
+.animated-btn:hover{
+  transform: scale(1.1);
+  background: #2980b9;
+}
+#writer{
+  font-weight: bolder;
+  font-size: 55px;
+  text-align: center;
+}
